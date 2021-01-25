@@ -1,4 +1,4 @@
-FROM horovod/horovod:0.16.2-tf1.12.0-torch1.1.0-mxnet1.4.1-py3.5 AS build
+FROM horovod/horovod:0.16.4-tf1.12.0-torch1.1.0-mxnet1.4.1-py3.5 AS build
 
 # Create a wrapper for OpenMPI to allow running as root by default
 RUN mv /usr/local/bin/mpirun /usr/local/bin/mpirun.real && \
