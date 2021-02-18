@@ -10,7 +10,7 @@ RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${K8S_VERS
 RUN chmod +x ./kubectl
 RUN mv ./kubectl /bin/kubectl
 
-FROM alpine:3.11.6
+FROM alpine:3.13.2
 COPY --from=build /bin/kubectl-delivery /bin/kubectl-delivery
 COPY --from=build /bin/kubectl /bin/kubectl
 ENTRYPOINT ["/bin/sh", "-c"]
