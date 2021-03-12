@@ -1,4 +1,4 @@
-FROM golang:1.13.6 AS build
+FROM golang:1.16.2 AS build
 
 WORKDIR /go/src/github.com/kubeflow/mpi-operator/
 COPY . /go/src/github.com/kubeflow/mpi-operator/
